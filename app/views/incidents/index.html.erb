@@ -1,3 +1,7 @@
+<header>
+  <%= render "shared/header" %>
+</header>
+
 <div class="contents row">
   <% @incidents.each do |incident| %>
     <div class="content_post">
@@ -11,3 +15,7 @@
     </div>
   <% end %>
 </div>
+
+<footer>
+  <%= render "shared/footer" %>
+</footer>

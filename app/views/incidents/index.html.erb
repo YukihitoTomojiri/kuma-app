@@ -1,0 +1,13 @@
+<div class="contents row">
+  <% @incidents.each do |incident| %>
+    <div class="content_post">
+      <p><%= incident.experience_years_id %></p>
+      <p><%= incident.type_id%></p>
+      <p><%= incident.case_level_id%></p>
+      <p><%= incident.management_level_id%></p>
+      <p><%= incident.place%></p>
+      <p><%= incident.date%></p>
+      <p><%= incident.patient_id%></p>
+    </div>
+  <% end %>
+</div>

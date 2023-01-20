@@ -3,4 +3,11 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+  
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  belongs_to :section
+  belongs_to :job
+
+  validates :section_id, numericality: { other_than: 1, message: "can't be blank" } 
+  validates :job_id, numericality: { other_than: 1, message: "can't be blank" } 
 end

@@ -5,8 +5,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   
   extend ActiveHash::Associations::ActiveRecordExtensions
-  belongs_to :section
-  belongs_to :job
+  belongs_to_active_hash :section
+  belongs_to_active_hash :job
+  has_many :incidents
 
   validates :name,             presence: true
   validates :birthday,         presence: true

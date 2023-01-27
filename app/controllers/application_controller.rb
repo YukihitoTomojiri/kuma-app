@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
       :email,
       :name,
       :birthday,
-      :postal_code,
+      :postcode,
       :prefecture_name,
       :address_city,
       :address_street,

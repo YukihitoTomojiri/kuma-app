@@ -57,6 +57,6 @@ gem 'pry-rails'
 gem 'devise'
 gem 'active_hash'
 gem 'bootstrap', '~> 5.0.2'
-gem 'jp_prefecture'
 gem 'jquery-rails'
-
+gem 'jp_prefecture'
+gem 'jquery-ui-rails'

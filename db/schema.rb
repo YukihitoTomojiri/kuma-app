@@ -37,10 +37,10 @@ ActiveRecord::Schema.define(version: 2023_01_24_234444) do
     t.string "encrypted_password", default: "", null: false
     t.string "name", null: false
     t.string "birthday", null: false
-    t.string "postal_code"
-    t.integer "prefecture_code"
-    t.string "address_city"
-    t.string "address_street"
+    t.integer "postcode", null: false
+    t.integer "prefecture_code", null: false
+    t.string "address_city", null: false
+    t.string "address_street", null: false
     t.string "address_building"
     t.integer "section_id", null: false
     t.integer "job_id", null: false

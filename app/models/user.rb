@@ -12,7 +12,7 @@ class User < ApplicationRecord
   validates :name,             presence: true
   validates :birthday,         presence: true
   VALID_POSTAL_CODE_REGEX = /\A\d{3}[-]?\d{4}\z/
-  validates :postal_code, presence: true, format: { with: VALID_POSTAL_CODE_REGEX }
+  validates :postcode, presence: true, format: { with: VALID_POSTAL_CODE_REGEX }
   validates :section_id, numericality: { other_than: 1, message: "can't be blank" } 
   validates :job_id, numericality: { other_than: 1, message: "can't be blank" } 
   

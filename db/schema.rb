@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 2023_01_24_234444) do
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "name", null: false
-    t.string "birthday", null: false
+    t.date "birthday", null: false
     t.integer "postcode", null: false
     t.integer "prefecture_code", null: false
     t.string "address_city", null: false

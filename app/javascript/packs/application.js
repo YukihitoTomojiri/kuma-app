@@ -6,7 +6,7 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks 
-//= require jquery // turbolinksより下に記述
+//= require jquery
 //= require_tree .
 
 $(function() {

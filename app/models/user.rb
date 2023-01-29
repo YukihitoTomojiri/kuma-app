@@ -13,6 +13,8 @@ class User < ApplicationRecord
     validates :name
     validates :birthday
     validates :prefecture_code
+    validates :address_city
+    validates :address_street
     VALID_POSTAL_CODE_REGEX = /\A\d{3}[-]?\d{4}\z/
     validates :postcode, format: { with: VALID_POSTAL_CODE_REGEX }
   end

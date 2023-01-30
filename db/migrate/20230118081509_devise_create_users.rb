@@ -15,7 +15,8 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       t.string   :address_building
       t.integer  :section_id,         null: false
       t.integer  :job_id,             null: false
-
+      t.boolean  :admin,              default: false
+      
       ## Recoverable
       t.string   :reset_password_token
       t.datetime :reset_password_sent_at

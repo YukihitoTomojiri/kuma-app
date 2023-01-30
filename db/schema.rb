@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 2023_01_24_234444) do
     t.string "address_building"
     t.integer "section_id", null: false
     t.integer "job_id", null: false
+    t.boolean "admin", default: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
